@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./assets/fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
+}
+
+:root {
+    --primary-color: #f2527d;
+    --secondary-color: #d936a0;
+    --accent-color: #f249d6;;
+    --background-color: #151740;
+    --border-color: #18d9d9;;
+    --text-color: #fff;
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    vaertical-align: middle;
+    width: 50PX;
+    height: 50px;
+    border-radius: 50%;
+}

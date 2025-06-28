@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Inter';
-    src: url(./assets/fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
+    src: url(./assets/fonts/Inter-VariableFont_slnt,wght.ttf)format('truetype');
 }
 
 :root {
-    --primary-color: #f2527d;
+    --primary-color: #151740;
     --secondary-color: #d936a0;
-    --accent-color: #f249d6;;
-    --background-color: #151740;
-    --border-color: #18d9d9;;
+    --accent-color: #f249d6;
+    --background-color: #f2527d;
+    --border-color: #18d9d9;
     --text-color: #fff;
     --font-family: 'Inter', sans-serif;
 }
@@ -22,14 +22,87 @@
 body {
     font-family: var(--font-family);
     background-color: var(--background-color);
-    color: var(--text-color);
     display: flex;
     flex-direction: column;
 }
 
+.card {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 6px var(--border-color);
+}
+
 .card-img {
-    vaertical-align: middle;
-    width: 50PX;
-    height: 50px;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.card-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-color)
+}
+
+.card-location {
+    font-size: 18px;
+    color: var(--accent-color);
+    font-weight: 600    ;
+    margin: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: var(--text-color);
+    margin: 10px;
+}
+
+.card-links {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+    width: 100%;
+    list-style: none;
+}
+
+.button {
+    background-color: var(--border-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+footer {
+    margin-top: 1rem;;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
 }

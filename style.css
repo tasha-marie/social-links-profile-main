@@ -114,4 +114,8 @@ footer {
     .card {
         width: 90%;
     }
+
+    .attribution {
+        font-size: 0.75rem;
+    }
 }

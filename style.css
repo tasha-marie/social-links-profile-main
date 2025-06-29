@@ -23,9 +23,7 @@ body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
     height: 100vh;
 }
 
@@ -110,9 +108,9 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 320px) {
+@media(min-width: 320px) {
     .card {
-        width: 90%;
+        max-width: 300px;
     }
 
     .attribution {
